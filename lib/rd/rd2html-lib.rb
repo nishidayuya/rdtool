@@ -163,6 +163,7 @@ module RD
     def apply_to_Headline(element, title)
       anchor = get_anchor(element)
       label = hyphen_escape(element.label)
+      title = title.join("")
       %Q[<h#{element.level}><a name="#{anchor}" id="#{anchor}">#{title}</a>] +
       %Q[</h#{element.level}><!-- RDLabel: "#{label}" -->]
     end
@@ -250,6 +251,7 @@ module RD
     def apply_to_DescListItem(element, term, description)
       anchor = get_anchor(element.term)
       label = hyphen_escape(element.label)
+      term = term.join("")
       if description.empty?
 	%Q[<dt><a name="#{anchor}" id="#{anchor}">#{term}</a></dt>] +
 	%Q[<!-- RDLabel: "#{label}" -->]
@@ -382,6 +384,7 @@ module RD
       raise ArgumentError, "[BUG] #{element} isn't registered." unless num
       anchor = a_name("foottext", num)
       href = a_name("footmark", num)
+      content = content.join("")
       %|<a name="#{anchor}" id="#{anchor}" href="##{href}">|+
 	%|<sup><small>*#{num}</small></sup></a>| +
 	%|<small>#{content}</small><br />|
