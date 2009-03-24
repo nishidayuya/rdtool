@@ -27,3 +27,9 @@ Gem::Specification.new do |s|
 RD formater and utilities. (RD is Ruby's POD)
 EOF
 end
+
+# Editor settings
+# - Emacs -
+# local variables:
+# mode: Ruby
+# end:
