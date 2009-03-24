@@ -1,8 +1,8 @@
 require "rubygems"
 
 Gem::Specification.new do |s|
-  s.authors = "MoonWolf"
-  s.email = "moonwolf@moonwolf.com"
+  s.authors = "Yuya.Nishida."
+  s.email = "yuyaAT@ATj96DOT.DOTorg"
   s.platform = Gem::Platform::RUBY
   s.summary = "RD formater and utilities. (RD is Ruby's POD)"
   s.name = "rdtool"
