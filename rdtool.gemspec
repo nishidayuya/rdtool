@@ -6,6 +6,7 @@ Gem::Specification.new do |s|
   s.platform = Gem::Platform::RUBY
   s.summary = "RD formater and utilities. (RD is Ruby's POD)"
   s.name = "rdtool"
+  s.rubyforge_project = s.name
   s.homepage = "http://rubyforge.org/projects/rdtool/"
   s.version = "0.6.22"
   s.require_path = "lib"
